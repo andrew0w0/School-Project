@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#primary-states nav ul {
+  position: absolute;
+  text-align: center;
+  top: -9px;
+  left: 2%;
+  width: 200px;
+  font-weight: 600;
+  font-size: 1.5rem; /* Ridotto per migliorare la leggibilità su schermi più piccoli */
+  gap: 170px;
+}
+
+#secondary-states nav ul {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  left: 60%;
+  top: -9px;
+  font-weight: 600;
+  font-size: 1.5rem; /* Ridotto per migliorare la leggibilità su schermi più piccoli */
+  gap: 190px;
+}
+
+#brasil {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5rem; /* Ridotto per migliorare la leggibilità su schermi più piccoli */
+  font-weight: 600;
+}
+
+#brasil a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+#brasil a:hover {
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.center-text {
+  position: absolute;
+  justify-content: center;
+  color: whitesmoke;
+  top: 32%;
+  left: 35%;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+#search-bar input {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 10px; /* Aggiustato per una migliore posizione su schermi più piccoli */
+  padding: 10px;
+  width: 200px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  transform: translateX(-50%); /* Centra l'input rispetto al bordo inferiore */
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 100px;
+  font-weight: 600;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+#video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+#google-maps img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#google-earth img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 8px;
+  right: 80px;
+}
