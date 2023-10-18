@@ -128,17 +128,16 @@ video {
 }
 
 @media screen and (max-width: 600px) {
-  #container {
-    display: flex;
-    flex-direction: column;
-  }
-
+  
   #primary-states nav ul {
     text-align: center;
     flex-direction: column;
     font-weight: 600;
     font-size: 1.2rem;
     gap: 8px;
+    top: 0%;
+    left: -9%;
+    position: absolute;
   }
 
   #secondary-states nav ul {
@@ -148,18 +147,22 @@ video {
     font-size: 1.2rem;
     gap: 10px;
     top: 20px;
-    right: 14%; /* Imposta la posizione a destra */
+    right:-35%; /* Imposta la posizione a destra */
   }
 
   header {
     background: rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    position: fixed;
+    height: 140px;
+    position: absolute;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
+  }
+
+  .center-text {
+  font-size: 3rem;
   }
 }
