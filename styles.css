@@ -33,12 +33,6 @@ header {
   right: 18%; /* Imposta la posizione a destra */
 }
 
-@media (max-width: 768px) {
-  #secondary-states nav ul {
-    left: 10%; /* Sposta i "secondary-states" più a sinistra */
-  }
-}
-
 
 nav ul {
   list-style: none;
@@ -131,4 +125,41 @@ video {
 #google-earth img {
   bottom: 8px;
   right: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #primary-states nav ul {
+    text-align: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap: 8px;
+  }
+
+  #secondary-states nav ul {
+    text-align: center;
+    font-weight: 600;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 10px;
+    top: 20px;
+    right: 14%; /* Imposta la posizione a destra */
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
 }
