@@ -234,19 +234,5 @@ video {
     right:-35%; /* Imposta la posizione a destra */
   }
 
-  header {
-    background: rgba(0, 0, 0, 0.2);
-    height: 140px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-  }
-
-  .center-text {
-    font-size: 3rem;
-  }
+  
 }
