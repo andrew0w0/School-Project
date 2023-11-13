@@ -15,8 +15,6 @@ window.onload = async function () {
    const center_text = document.getElementsByClassName('center-text').item(0).innerHTML;
    
    const directory = directories.find(element => element.centertext === center_text);
-   console.log('center_text', center_text)
-   console.log('directory', directory)
    
    for (const image of directory.images) {
      var imageElement = document.createElement('img')
@@ -25,8 +23,6 @@ window.onload = async function () {
 
      if(center_text == 'SUD AMERICA') imageElement.src = `./src/images/${directory.directory}/${image}.png`;
      else imageElement.src = `../../images/${directory.directory}/${image}.png`;
-
-     console.log('imageElement', imageElement)
    
      div.appendChild(imageElement);
    }
